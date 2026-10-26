@@ -1,0 +1,195 @@
+/* GENERAL STYLES */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1e0028;
+    color: rgb(233, 176, 255);
+}
+
+header {
+    padding: 25px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a,
+nav button {
+    color: rgb(233, 176, 255);
+    font-family: inherit;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+nav a:hover,
+nav button:hover {
+    opacity: 0.5;
+}
+
+.obra {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px;                      
+    align-items: center;            
+    margin-bottom: 30px;            
+    background-color: #2f004e;
+    border: 2px solid rgb(187, 117, 215);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.obra img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;       
+    object-fit: contain;     
+    border-radius: 8px;
+}
+
+.descripcion-obra p {
+    font-size: 18px; 
+    line-height: 1.5; 
+}
+
+.numero-obra {
+    font-size: 50px;  
+    font-weight: bold; 
+    color: rgb(233, 176, 255);
+    margin: 0;
+}
+
+.descripcion-obra h2 {
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+.imagen-obra iframe {
+    width: 100%;
+    height: 220px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+.sobre-mi {
+    text-align: center;       
+    max-width: 800px;           
+    margin: 40px auto;         
+}
+
+.Artista h2 {
+    font-size: 36px;           
+    margin-bottom: 10px;
+}
+
+.statment {
+    font-size: 28px;            
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.sobre-mi .bio {
+    font-size: 18px;            
+    line-height: 1.6;           
+}
+
+.link-instagram {
+    color: rgb(233, 176, 255);
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.link-instagram:hover {
+    color: #e1306c;
+}
+
+
+.about {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+    width: 90%;
+    max-width: 600px;                  
+    padding: 35px;                     
+    
+    background-color: #2f004e;
+    border: 2px solid rgb(187, 117, 215);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    
+    color: rgb(233, 176, 255);
+    font-size: 20px;                   
+    line-height: 1.6;
+    text-align: center;                
+}
+
+.btn-instagram-about {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(187, 117, 215);
+    color: #1e0028;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Contenedor de botones en ABOUT */
+.redes-about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-about {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-about:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Colores específicos para cada red */
+.btn-ig {
+    background-color: rgb(187, 117, 215);;
+    color: #2f004e;
+}
+
+.btn-metanoia {
+    background-color: rgb(187, 117, 215);;
+    color: #2f004e;
+}
+
+.btn-yt {
+    background-color: rgb(187, 117, 215);;
+    color: #2f004e;
+}
+
